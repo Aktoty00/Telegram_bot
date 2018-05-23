@@ -1,4 +1,4 @@
-text_bf1 = """Omelette\n
+BF_TEXT = [ """Omelette\n
 Ingredients:
 large free-range egg
 water
@@ -12,8 +12,9 @@ Method:
 5. CONTINUE cooking, tilting pan and gently moving cooked portions as needed.\n
 6. When top surface of eggs is thickened and no visible liquid egg remains, PLACE filling on one side of the omelette.\n
 7. FOLD omelette in half with turner. With a quick flip of the wrist, turn pan and INVERT or SLIDE omelette onto plate. \n
-8. SERVE immediately and BON APPETIT!"""
-text_bf2 = """One-cup pancakes with blueberries\n
+8. SERVE immediately and BON APPETIT!""",
+
+ """One-cup pancakes with blueberries\n
 Ingredients:
 1 large free-range egg
 1 cup of self-raising flour
@@ -30,8 +31,9 @@ and you’ll need to work in batches.\n
 5. Cook for 1 to 2 minutes, or until little bubbles appear on the surface and the bases are golden, then carefully flip them over.\n
 6. When the pancakes are golden on both sides, remove to a plate.\n
 7. Repeat with the remaining batter, adding a little more oil to the pan between batches, if needed.\n
-8. Serve the pancakes while they’re still hot, with a dollop of yoghurt and some extra fresh berries, if you like."""
-text_bf3 = """Egg & mango chutney flatbreads\n
+8. Serve the pancakes while they’re still hot, with a dollop of yoghurt and some extra fresh berries, if you like.""",
+
+ """Egg & mango chutney flatbreads\n
 Ingredients:
 1 satsuma
 1 wholemeal tortilla wrap
@@ -47,8 +49,9 @@ Method:
 4. Lay the wrap flat in the middle of the chopping board, then spread the cocoa yoghurt evenly over the wrap.\n
 5. Peel and place the banana in the middle of the wrap, then gently mash with a fork, spreading it around as evenly as possible.\n
 6. Sprinkle the berries and seeds over the mashed banana.\n
-7. Cut into quarters, then tuck in, folding or wrapping up each quarter as you go."""
-text_bf4 = """Apple & pecan porridge\n
+7. Cut into quarters, then tuck in, folding or wrapping up each quarter as you go.""",
+
+ """Apple & pecan porridge\n
 Ingredients:
 4 large free-range eggs
 100 g self-raising flour , plus extra for dusting
@@ -60,9 +63,9 @@ Method:
 2. Meanwhile, put a large non-stick frying pan on a medium-high heat. In a bowl, mix the flour with a little pinch of sea salt, 4 tablespoons of yoghurt and 1 tablespoon of olive oil until you have a dough.\n
 3. Halve, then roll out each piece on a flour-dusted surface until just under ½cm thick. Cook for 3 minutes, or until golden, turning halfway.\n
 4. Dot the mango chutney and remaining yoghurt over the breads. Halve the soft- boiled eggs and arrange on top, smashing them in with a fork, if you like. 
-5. Finely slice the chilli and scatter over (as much as you dare!), drizzle with a little extra virgin olive oil and season with salt and black pepper from a height."""
+5. Finely slice the chilli and scatter over (as much as you dare!), drizzle with a little extra virgin olive oil and season with salt and black pepper from a height.""",
 
-text_bf5 = """Mini super-fruit breakfast wraps\n
+ """Mini super-fruit breakfast wraps\n
 Ingredients:
 160 g rolled oats
 600 ml milk or organic soya milk
@@ -76,4 +79,53 @@ Method:
 4. Snap the pecans up into little pieces, then toast in a small dry non-stick frying pan over a medium heat for 3 to 4 minutes, or until lightly golden.\n
 5. Remove the apple stalk, then use a box grater to coarsely grate it onto a chopping board (core and all).\n
 6. Stir the grated apple and a little maple syrup through then porridge, then divide between bowls.\n
-7. Scatter the pecans on top, then drizzle with a little extra maple syrup, if you like."""
+7. Scatter the pecans on top, then drizzle with a little extra maple syrup, if you like.""",
+
+ """Silky masala eggs\n
+Ingredients:
+1 small red onion
+1 fresh red or green chilli
+1 clove of garlic
+½ a bunch of fresh coriander
+2 large ripe tomatoes
+4 wholemeal chapatis
+olive oil
+½ teaspoon cumin seeds
+1 teaspoon garam masala
+½ teaspoon ground turmeric
+6 large free-range eggs\n
+Method:
+1. Preheat the oven to 160ºC/325ºF/gas 3.\n
+2. On a chopping board, peel and finely slice the onion, deseed and finely slice the chilli, then peel and crush the garlic.\n
+3. Pick and roughly chop the coriander leaves, finely chopping the stalks.\n
+4. Halve, deseed and finely chop the tomatoes.\n
+5. Place the chapatis on a tray and into the oven to warm through.\n
+6. Heat 1 tablespoon of olive oil in a large non-stick frying pan over a medium-low heat, add the onion, chilli, garlic and coriander stalks, then fry for 5 minutes, or until softened, stirring regularly.\n
+7. Add the spices, then cook for 1 minute, or until smelling fantastic.\n
+8. Meanwhile, crack the eggs into a bowl, add a pinch of sea salt and black pepper, then beat with a fork.\n
+9. Scatter the chopped tomatoes into the pan, cook for a further 2 minutes, then pour in the eggs and reduce the heat to low.\n
+10. Stir slowly until you’ve got beautiful silky strips of just cooked egg, surrounded by softer, custardy egg, then remove from the heat – the residual heat of the pan will continue to cook the eggs.\n
+11. Stir the coriander leaves into the eggs, then serve with warm chapatis and a little extra chilli scattered over, if you like.
+""",
+
+ """Chocolate porridge\n
+Ingredients:
+200 g blanched hazelnuts
+200 g Medjool dates
+400 g porridge oats
+2 teaspoons vanilla extract
+3 heaped tablespoons quality cocoa powder
+1 orange
+FOR EACH PORTION
+200 ml coconut water
+1 heaped tablespoon Greek yoghurt
+80g fresh fruit, such as raspberries, blackberries, sliced banana, grated apple and pear, segments of orange
+1 pinch of ground cinnamon or quality cocoa powder , (optional)\n
+Method:0
+Toast the hazelnuts in a dry pan on a medium heat until golden, tossing often, then tip into a food processor.\n
+Tear the stones out of the dates and add the flesh to the processor with half the oats, the vanilla extract and cocoa powder.\n
+Finely grate in the orange zest and pulse until fine, then stir the mixture back through the rest of the oats. Pour into an airtight jar, ready to use.\n
+When you want a portion, simply put 65g of the mixture into a saucepan with 200ml of coconut water and heat gently over a medium-low heat for 3 minutes, or until it’s the consistency that you like, stirring regularly and adding splashes of water to loosen, if needed.\n
+Serve each portion with a spoonful of Greek yoghurt and 80g of fresh fruit. It’s also nice finished with a pinch of cinnamon or a dusting of cocoa, if you like. And remember, if you up the number of portions you’re cooking at one time, simply adjust the cooking time accordingly. Chocolate porridge – how cool is that!\n
+"""
+]

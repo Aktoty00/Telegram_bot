@@ -1,5 +1,5 @@
-
-text_ds1 = """Pumpkin pie with pecan crumble\n
+DESSERT_TEXT = [
+"""Pumpkin pie with pecan crumble\n
 Ingredients:
 PASTRY
 150 g unsalted butter , (cold), plus extra for greasing
@@ -39,8 +39,9 @@ Method:
 13. Add the butter, flour, sugar and maple syrup, then pulse to a rough crumb.\n
 14. When the time’s up, remove the tart from the oven, sprinkle over the topping, then bake for a further 20 minutes, or until golden. Leave to cool before slicing.\n
 15. Delicious served with a dollop of boozy cream. I sometimes like to decorate my pie with extra toasted pecans, just before serving, too.\n
-"""
-text_ds2 = """Blackcurrant ombré cheesecake\n
+""",
+
+"""Blackcurrant ombré cheesecake\n
 Ingredients:
 100 g unsalted butter , plus extra for greasing
 300 g oaty biscuits
@@ -59,8 +60,9 @@ Method:
 6. Meanwhile, make the jelly. Soak the gelatine in cold water for 5 minutes, then drain. Spoon the remaining ½ jar of jam in a saucepan over a low heat along with 100ml of water and 50g of berries, and gently simmer for 3 minutes.\n
 7. Stir in the gelatine until dissolved, then pour into a glass jug and cool for 30 minutes.\n
 8. Once cooled, pour the jelly over the cheesecake, carefully spreading over the surface. Let it sit in the fridge for 1 more hour, until the jelly is firm to the touch.\n
-9. The cheesecake will keep in the fridge for up to 3 days – serve garnished with the remaining blackcurrants and blackberries."""
-text_ds3 = """Almond pastry puff\n
+9. The cheesecake will keep in the fridge for up to 3 days – serve garnished with the remaining blackcurrants and blackberries.""",
+
+"""Almond pastry puff\n
 Ingredients:
 100 g blanched almonds
 1 tablespoon double cream , plus extra to serve
@@ -73,8 +75,9 @@ Method:
 3. Halve the pastry, shape into two rounds and, working quickly, dusting with icing sugar as you go to stop the pastry sticking, roll out between two sheets of greaseproof paper until they’re just under ½cm thick.\n
 4. Place one round on the lined tray. Spread the almond paste on top, leaving a 2cm gap at the edges. Put the other round on top and gently push together. Quickly seal the edges with the back of a fork. Eggwash the top, then dust over an extra layer of sugar.\n
 5. Gently push your finger into the middle of the pastry, then, with a sharp knife, very delicately make little lines from the centre to the outside.\n
-6. Bake on the bottom of the oven for 12 to 15 minutes, or until puffed up and golden, dusting with a little extra icing sugar before dishing up."""
-text_ds4 = """Brigadeiros\n
+6. Bake on the bottom of the oven for 12 to 15 minutes, or until puffed up and golden, dusting with a little extra icing sugar before dishing up.""",
+
+"""Brigadeiros\n
 Ingredients:
 400 g condensed milk
 4 tablespoons cocoa powder
@@ -91,8 +94,9 @@ Method:
 6. Put the chocolate sprinkles in a small bowl. If you have one, use a mini ice-cream scoop to make a 20g ball and drop it into the sprinkles (alternatively, use a teaspoon).\n
 7. Coat it liberally with the sprinkles, roll it with your hands to make a neat ball and place it in a mini cupcake or petit-four case. Continue with the rest of the mixture.\n
 8. Store in an airtight container in the fridge, but take them out at least half an hour before serving, as they’re best at room temperature.\n
-"""
-text_ds5 = """Lamingtons\n
+""",
+
+"""Lamingtons\n
 Ingredients:
 500 g unsalted butter , (at room temperature), plus extra for greasing
 250 g self-raising flour , plus extra for dusting
@@ -113,4 +117,44 @@ Method:
 5. Once cooled, spread the jam over one of the cakes, then place the second cake on top. Carefully slice into 4cm squares – you should end up with 54 in total.\n
 6. To decorate, get a little production line going – dip a square of cake into the chocolate icing, turning to coat all the sides. Place the chocolate dipped sponge onto a wire rack to allow excess chocolate to drip off, then coat with the coconut, returning to the wire rack to set.\n
 7. Repeat with the remaining cakes, then once set, tuck in!\n
-"""
+""",
+
+"""Apple & date pie:\n
+Ingredients:
+PASTRY
+140 g unsalted butter , (cold)
+275 g plain flour , plus extra for dusting
+1 lemon, 1 large free-range egg yolk
+FILLING
+3 bramley apples, 6 braeburn apples
+5 medjool dates, 4 tablespoons soft light muscovado sugar
+¼ teaspoon ground cinnamon, 1 pinch of ground cloves
+GLAZE
+1 large free-range egg, 1 teaspoon milk
+1 tablespoon demerara sugar , plus extra for sprinkling\n
+Method:
+1. For the pastry, dice the butter and place into the bowl of a food processor with the flour and ¼ of a teaspoon of sea salt, then pulse until the mixture resembles coarse breadcrumbs.\n
+2. Finely grate the lemon zest and reserve for later, then squeeze in 1 tablespoon of lemon juice, add the egg yolk and 2 tablespoons of cold water, and pulse to combine. If the mixture still looks dry, keep adding water and pulsing until the dough comes together.\n
+3. Divide the dough in two, shape into equal-sized discs, wrap in clingfilm and chill in the fridge for 1 hour to firm up.\n
+4. For the filling, peel and core the apples, cut into 1cm wedges and place in a saucepan. Sprinkle over the reserved lemon zest and squeeze in the remaining juice.\n
+5. Finely chop the dates, removing any pits, then stir in with the sugar and spices. Gently simmer over a medium-low heat for 6 to 8 minutes, or until the apples are almost tender. Set aside to cool.\n
+6. Preheat the oven to 200ºC/400ºF/gas 6.\n
+7. Roll one of the pastry discs out to 5mm thick on a clean, floured surface and use it to line a deep 20cm pie dish, pushing the pastry into the edges. Trim the edges, leaving a 2.5cm overhang around the dish. Spoon in the cooled pie filling, packing it tightly.\n
+8. Roll the second pastry disc out to 5mm thick, brush the edges with water and place over the pie, pressing the edges to seal. Fold in the overhang and crimp with your fingers.\n
+9. For the glaze, beat all the ingredients together in a small bowl, then brush all over the pie. If you have any off-cuts of pastry, you could make extra decorations for the top, sealing with extra glaze.\n
+10. Using a sharp knife, make incisions into the pie top to allow steam to escape during baking. Sprinkle with extra demerara sugar.\n
+11. Bake the pie for 35 to 40 minutes, or until the pastry is golden and firm. Delicious served warm, with pouring cream or lashings of custard.\n
+""",
+
+"""Cherry chocolate mousse:\n
+Ingredients:
+200 g quality dark chocolate , (70%)
+1 x 400 g tin of black pitted cherries in syrup
+200 ml double cream
+4 large free-range eggs
+2 tablespoons golden caster sugar\n
+Method:
+1. Melt the chocolate in a heatproof bowl over a pan of gently simmering water, then remove to cool for 10 minutes. Meanwhile, simmer the cherries and their syrup in a non-stick frying pan on a medium heat until thick, then remove.\n
+2. Whip the cream to very soft peaks. Separate the eggs, add the yolks to the cream with the sugar, and whisk to combine. Add a pinch of sea salt to the whites and, with a clean whisk, beat until super-stiff. Fold the cooled chocolate into the cream, then very gently fold that through the egg whites with a spatula.\n
+3. Divvy up the mousse between six glasses or bowls, interspersing the cherries and syrup throughout, and finishing with a few nice cherries on top.
+"""]
