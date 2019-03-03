@@ -1,78 +1,121 @@
-import logging
-from breakfast import * 
-from lunch import *
-from dinner import *
-from dessert import *
-from drink import *
-from salad import *
-from additional import *
-
+import telebot
+import additional
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Updater, CommandHandler, CallbackQueryHandler
-
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    level=logging.INFO)
-logger = logging.getLogger(__name__)
-
+from telegram.ext import Updater, CommandHandler, CallbackQueryHandler 
+from additional import *
 
 def start(bot, update):
     reply_markup = InlineKeyboardMarkup(keyboard)
-    update.message.reply_text('Hello, I am a recipe-bot. Please choose on of the item below:', reply_markup=reply_markup)
+    update.message.reply_text('Hello, I am a quiz-bot. Please choose one of the category, then the location below:', reply_markup=reply_markup)
 
 
 def button(bot, update):
     query = update.callback_query
-    
-    reply_markup1 = InlineKeyboardMarkup(keyboard1)
-    reply_markup2 = InlineKeyboardMarkup(keyboard2)
-    reply_markup3 = InlineKeyboardMarkup(keyboard3) 
-    reply_markup4 = InlineKeyboardMarkup(keyboard4)
-    reply_markup5 = InlineKeyboardMarkup(keyboard5)
-    reply_markup6 = InlineKeyboardMarkup(keyboard6)
+    reply_markupL = InlineKeyboardMarkup(keyboardL)
+    reply_markupG = InlineKeyboardMarkup(keyboardG)
 
-    if query.data == 'Breakfast':
-        query.edit_message_reply_markup(reply_markup = reply_markup1)
-    if query.data == 'Lunch':
-        query.edit_message_reply_markup(reply_markup = reply_markup2)
-    if query.data == 'Dinner':
-        query.edit_message_reply_markup(reply_markup = reply_markup3)
-    if query.data == 'Dessert':
-        query.edit_message_reply_markup(reply_markup = reply_markup4)
-    if query.data == 'Drink':
-        query.edit_message_reply_markup(reply_markup = reply_markup5)
-    if query.data == 'Salad':
-        query.edit_message_reply_markup(reply_markup = reply_markup6)
+#Category
+    if query.data == 'Безопасность':
+        f= open("save.txt","a+")
+        f.write("Безопасность || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupG)
+    if query.data == 'Бизнес':
+        f= open("save.txt","a+")
+        f.write("Бизнес || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupG)
+    if query.data == 'ЖКХ':
+        f= open("save.txt","a+")
+        f.write("ЖКХ || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupG)
+    if query.data == 'Коррупция':
+        f= open("save.txt","a+")
+        f.write("Коррупция || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupG)
+    if query.data == 'Образование':
+        f= open("save.txt","a+")
+        f.write("Образование || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupG)
+    if query.data == 'Экология':
+        f= open("save.txt","a+")
+        f.write("Экология || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupG)
 
-    #BREAKFAST_MEALS
-    for i in range (0, 7):
-        if query.data == breakfast_meals[i]:
-            query.edit_message_text(BF_TEXT[i])
-    #LUNCH_MEALS
-    for i in range (0, 7):
-        if query.data == lunch_meals[i]:
-            query.edit_message_text(LUNCH_TEXT[i])
-    #DINNER__MEALS
-    for i in range (0, 7):
-        if query.data == dinner_meals[i]:
-            query.edit_message_text(DINNER_TEXT[i])
-    #DESSERT__MEALS
-    for i in range (0, 7):
-        if query.data == dessert_meals[i]:
-            query.edit_message_text(DESSERT_TEXT[i])
-    #DRINK__MEALS
-    for i in range (0, 7):
-        if query.data == drink_meals[i]:
-            query.edit_message_text(DRINK_TEXT[i])
-    #SALAD__MEALS
-    for i in range (0, 7):
-        if query.data == salad_meals[i]:
-            query.edit_message_text(SALAD_TEXT[i])
+# Gov
+    if query.data == '101001':
+        f= open("save.txt","a+")
+        f.write("101001 || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupL)
+    if query.data == '101002':
+        f= open("save.txt","a+")
+        f.write("101002 || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupL)
+    if query.data == '101003':
+        f= open("save.txt","a+")
+        f.write("101003 || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupL)
+    if query.data == '101004':
+        f= open("save.txt","a+")
+        f.write("101004 || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupL)
+    if query.data == '101006':
+        f= open("save.txt","a+")
+        f.write("101006 || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupL)
+    if query.data == '101007':
+        f= open("save.txt","a+")
+        f.write("101007 || ")
+        f.close()
+        query.edit_message_reply_markup(reply_markup = reply_markupL)
+
+#location
+    if query.data == 'г. Астана':
+        f= open("save.txt","a+")
+        f.write("г. Астана || "+str(query.from_user.username)+"\n")        
+        f.close()
+        query.message.edit_text('Thank you for your answer, bye :)')         
+    if query.data == 'г. Алматы':
+        f= open("save.txt","a+")
+        f.write("г. Алматы || "+str(query.from_user.username)+"\n")
+        f.close()
+        query.message.edit_text('Thank you for your answer, bye :)')
+    if query.data == 'Акмолинская область':
+        f= open("save.txt","a+")
+        f.write("Акмолинская область || "+str(query.from_user.username)+"\n")        
+        f.close()
+        query.message.edit_text('Thank you for your answer, bye :)')
+    if query.data == 'Актюбинская область':
+        f= open("save.txt","a+")
+        f.write("Актюбинская область || "+str(query.from_user.username)+"\n")        
+        f.close()
+        query.message.edit_text('Thank you for your answer, bye :)')
+    if query.data == 'Алматинская область':
+        f= open("save.txt","a+")
+        f.write("Алматинская область || "+str(query.from_user.username)+"\n")        
+        f.close()
+        query.message.edit_text('Thank you for your answer, bye :)')
+    if query.data == 'Атырауская область':
+        f= open("save.txt","a+")
+        f.write("Атырауская область || "+str(query.from_user.username)+"\n")        
+        f.close()
+        query.message.edit_text('Thank you for your answer, bye :)')
+
 
 def help(bot, update):
     update.message.reply_text("Use /start to test this bot.")
 
 def main():
-    updater = Updater("606072390:AAGHAH7LFwLSqKjaPze27U3arh4h7vT3bHI")
+    updater = Updater("748589730:AAFTa5GARrCETSoHBDkVG7TKRmBpniWrSl4")
 
     updater.dispatcher.add_handler(CommandHandler('start', start))
     updater.dispatcher.add_handler(CallbackQueryHandler(button))
